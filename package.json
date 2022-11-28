@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node index.js",
+    "client": "node start-client.cjs"
   },
   "author": "Jonathan Woodward",
   "license": "ISC",
@@ -15,5 +17,8 @@
     "express-graphql": "^0.12.0",
     "graphql": "^15.8.0",
     "readline-promise": "^1.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }
