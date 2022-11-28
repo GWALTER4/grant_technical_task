@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 300px;
+}
+
+#commandBar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 20px;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 300px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+#commandForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#commandForm__position {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#commandForm__position > label > input {
+  margin-left: 10px;
+  width: 50px;
+}
+
+#commandForm__orientation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#orientation__inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#orientation__inputs > label > input {
+  margin-left: 10px;
+}
+
+#commandForm > button {
+  height: 40px;
+}
+
+#statusBar {
+  margin: 20px 20px 0;
+  max-width: 800px;
+  min-width: 300px;
+}
+
+#statusMessage {
+  text-align: center;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+#grid {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 20px 0;
+  max-width: 800px;
+  min-width: 300px;
+}
+
+.gridRow {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .gridCell {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gridCell {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.gridCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.robotCell {
+  background-color: #60e963;
+}
+
+.lost {
+  background-color: red;
+}
+
+.east {
+  transform: rotate(0.25turn);
+}
+
+.south {
+  transform: rotate(0.5turn);
+}
+
+.west {
+  transform: rotate(0.75turn);
+}
+
+#robotControlsBar {
+  margin: 20px 20px 0;
+  max-width: 800px;
+  min-width: 300px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+#robotControls > button {
+  width: 80px;
+  height: 40px;
+}
+
+#robotControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
