@@ -272,3 +272,22 @@ Enter command: h
   'o Get the output by input id - usage: o id'
 ]
 ```
+
+## Usage Client
+
+To run the client and server simultaneously
+```
+npm start
+```
+
+To run the client on its own
+```
+npm run client
+```
+
+The client is responsive and can be used in a mobile or desktop view. 
+
+Once the client launches you can use the form at the top of the page to submit the robot's starting position on the grid. The grid will then appear on the screen showing the robot's position. To control the robot, you can use the control buttons at the bottom of screen or the keyboard. The keyboard controls are as follows: 
+- Forward (W or Up Arrow)
+- Left (A or Left Arrow)
+- Right (D or Right Arrow)
